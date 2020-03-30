@@ -1,0 +1,37 @@
+.courses {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    h2 {
+        margin-bottom: 10px;
+        border-bottom:1px solid black;
+    }
+
+    &__info {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        li+li {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        li {
+            font-size: 14px;
+        }
+
+        .fa-check {
+            margin-right: 8px;
+            color:blue;
+        }
+    }
+    .fa-clipboard {
+        margin-right: 5px;
+        color: $accent;
+    }
+}

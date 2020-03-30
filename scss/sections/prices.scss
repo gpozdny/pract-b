@@ -1,0 +1,79 @@
+
+.prices {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // padding-bottom: 60px;
+
+    &__slide {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            display: flex;
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-bottom:1px solid black;
+        }
+        p {
+            font-size: 14px;
+        }
+        .fa-wave-square, .fa-think-peaks {
+            margin-right: 5px;
+            color: $accent;
+        }
+        ul {
+            width: 100%;
+            margin-top: 10px;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        li + li {
+            margin-top: 5px;
+        }
+        li {
+            margin-left: 20%;
+        }
+        p + p {
+            margin-top: 5px;
+        }
+    }
+}
+
+.swiper-button-prev-custom, 
+.swiper-button-next-custom {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+
+}
+
+.swiper-button-next-custom  {
+    right: 0;
+}
+
+.swiper-button-prev-custom{
+    left: 0;
+}
+
+.fa-caret-left, .fa-caret-right {
+    color: blue;
+    z-index: 99;
+    font-size: 25px;
+}
+
+.fa-money-bill-alt {
+    color: green;
+    margin-right: 5px;
+}
+
+// .border-fix {
+//     display: flex;
+//     border-bottom:1px solid black;
+// }

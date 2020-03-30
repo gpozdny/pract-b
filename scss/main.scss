@@ -1,0 +1,88 @@
+@import 'config';
+@import 'sections/header.scss';
+@import 'sections/main-s.scss';
+@import 'sections/courses.scss';
+@import 'sections/footer.scss';
+@import 'sections/prices.scss';
+
+
+
+//EXTRAS
+
+@import 'normalize';
+
+
+// CUSTOM USER STYLES & IMPORTS
+
+
+a {
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    padding: 0 5% 0 5%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 0;
+    
+}
+
+ol,
+ul {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main,
+section {
+    width: 100%;
+}
+
+// ATTACHED FOOTER
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-top: auto;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.fa-ruble-sign {
+    font-size: 12px;
+    margin-left: 2px;
+}
