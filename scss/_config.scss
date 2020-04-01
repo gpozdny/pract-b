@@ -57,7 +57,7 @@ button {
     padding: 0;
     width: auto;
     overflow: visible;
-
+    
     background: transparent;
 
     /* inherit font & color from ancestor */
@@ -76,6 +76,8 @@ button {
 }
 
 body {
+    height: 100%;
+    position: relative;
 	font-family: $roboto;
 	font-size: $fontsize;
 	min-width: 320px;

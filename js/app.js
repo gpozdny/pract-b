@@ -18,4 +18,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	});
 
+	// POPUP
+
+	let buttonPopUp = document.querySelector('.login__button'),
+		popUp = document.getElementById('popUp'),
+		crossPopUp = document.getElementById('cross');
+
+	buttonPopUp.addEventListener('click', function(){
+		showPopUp();
+	});
+
+	crossPopUp.addEventListener('click', function(){
+		hidePopUp();
+	});
+
+	function showPopUp() {
+		popUp.classList.remove('isHidden')
+		popUp.classList.add('isShown'),
+		document.body.classList.add('scrollIsBlocked');
+	}
+
+	function hidePopUp() {
+		popUp.classList.remove('isShown'),
+		document.body.classList.remove('scrollIsBlocked');
+	}
 });

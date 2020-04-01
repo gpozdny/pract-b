@@ -5,6 +5,8 @@
 @import 'sections/footer.scss';
 @import 'sections/prices.scss';
 @import 'sections/login.scss';
+@import 'sections/popup-login-form';
+@import 'extras/statuses.scss';
 
 
 
@@ -16,7 +18,7 @@
 // CUSTOM USER STYLES & IMPORTS
 
 // ATTACHED FOOTer
-html,
+
 body {
     height: 100%;
 }
@@ -64,4 +66,41 @@ section {
 .fa-ruble-sign {
     font-size: 12px;
     margin-left: 2px;
+}
+
+// POPUPS
+
+.popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(168, 168, 168, 0.66);
+    z-index: 999;
+    transform: translateY(50px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+// STATUSES
+
+.isHidden {
+    opacity: 0;
+    pointer-events:none
+}
+
+.isShown {
+    opacity: 1;
+    pointer-events:all;
+}
+
+.noCursor {
+    pointer-events:none
+}
+
+.scrollIsBlocked {
+    overflow-y: hidden;
 }
