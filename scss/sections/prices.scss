@@ -21,6 +21,7 @@
         p {
             padding: 0 20px;
             font-size: 14px;
+            max-width: 400px;
         }
         .fa-wave-square, .fa-think-peaks {
             margin-right: 5px;
@@ -71,6 +72,11 @@
 
 .fa-money-bill-alt {
     color: green;
+    margin-right: 5px;
+}
+
+.fa-clone {
+    color: red;
     margin-right: 5px;
 }
 
