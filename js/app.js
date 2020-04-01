@@ -47,5 +47,22 @@ document.addEventListener("DOMContentLoaded", function () {
 		// document.body.classList.remove('scrollIsBlocked');
 	}
 
-	
+	// Check student ID
+
+	let form = document.getElementById('submit'),
+		inputValue = document.getElementById('value');
+
+	form.addEventListener('click', function(){
+		let studentID = inputValue.value;
+
+		switch (studentID) {
+			case '1nna': 
+			alert(`RIGHT!`);
+			break;
+			default:
+				alert(`there is no such ID`);
+				event.preventDefault();
+		}
+
+	});
 });

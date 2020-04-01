@@ -6,6 +6,7 @@
 @import 'sections/prices.scss';
 @import 'sections/login.scss';
 @import 'sections/popup-login-form';
+@import 'sections/students.scss';
 @import 'extras/statuses.scss';
 
 
@@ -34,7 +35,7 @@ body {
     flex-shrink: 0;
   }
   .header {
-    margin-BOTTOM: auto;
+    margin-top: auto;
   }
 // MISC
 
