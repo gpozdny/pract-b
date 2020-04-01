@@ -18,7 +18,6 @@
 <body>
 
 	<!-- CUSTOM HTML -->
-
 	<header class="header">
 		<h1>Pozdny's English Courses</h1>
 		<div class="header__socials">
@@ -143,20 +142,25 @@
 
 
 	</footer>
+
+
 	
+		
+	</div>
+	<div class="overlay" id='overlay'></div>
 	<div class="popup" id="popUp">
-		<form action="" class="login-form">
+		<form method="get" action="students.html" class="login-form">
 			<h3 class="login-form__title">Type in your student ID</h3>
 			<div class="login-form__wrapper">
 				<input class="login-form__input" type="text" placeholder="your student ID" required>
-				<input class="login-form__button"
-						type="button" 
-						value="Enter"
+				<input type="submit" class="login-form__button"  value="Submit">
+						
 			</div>
 			<span class="login-form__cross" id="cross"><i class="far fa-times-circle"></i></span>
 			<p>Any problems logging? Message me to telegram <span>@highspire</span></p>
 		</form>
 	</div>
+
 	<script src="js/swiper.min.js"></script>
 	<script src="js/swiper.min.js.map"></script>
 	<script src="js/app.min.js"></script>

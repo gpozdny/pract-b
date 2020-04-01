@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// POPUP
 
 	let buttonPopUp = document.querySelector('.login__button'),
+		overlay = document.getElementById('overlay'),
 		popUp = document.getElementById('popUp'),
 		crossPopUp = document.getElementById('cross');
 
@@ -33,13 +34,18 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	function showPopUp() {
-		popUp.classList.remove('isHidden')
-		popUp.classList.add('isShown'),
-		document.body.classList.add('scrollIsBlocked');
+		overlay.classList.remove('isHidden'),
+		overlay.classList.add('isShown');
+		popUp.classList.remove('isHidden'),
+		popUp.classList.add('isShown');
+		// document.body.classList.add('scrollIsBlocked');
 	}
 
 	function hidePopUp() {
-		popUp.classList.remove('isShown'),
-		document.body.classList.remove('scrollIsBlocked');
+		overlay.classList.remove('isShown');
+		popUp.classList.remove('isShown');
+		// document.body.classList.remove('scrollIsBlocked');
 	}
+
+	
 });
