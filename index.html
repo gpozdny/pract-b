@@ -37,22 +37,25 @@
 		</div>
 	</header>
 	<main class="main content">
-		<div class="main__picture">
-			<img src="images/dest/flag.png" alt="flag" class="flag">
-		</div>
-		<h2 class="main__heading"><i class="fas fa-user-graduate"></i>About me</h2>
-		<div class="contanier main__info">
-			<p>Volgograd Pedagogical State University's graduate. Finished in 2019. Started to work as a private tutor
-				in 2018. Have been to USA two times:</p>
-			<ol>
-				<li>As a member of YLI</li>
-				<li>Work and travel program</li>
-			</ol>
-			<p>I like English language, its cultural and linguistic nature, its way of thinking. Every day, another
-				English material!</p>
+		<div class="container main__container">
+			<div class="main__picture">
+				<img src="images/dest/flag.png" alt="flag" class="flag">
+			</div>
+			<h2 class="main__heading"><i class="fas fa-user-graduate"></i>About me</h2>
+			<div class="contanier main__info">
+				<p>Volgograd Pedagogical State University's graduate. Finished in 2019. Started to work as a private tutor
+					in 2018. Have been to USA two times:</p>
+				<ol>
+					<li>As a member of YLI</li>
+					<li>Work and travel program</li>
+				</ol>
+				<p>I like English language, its cultural and linguistic nature, its way of thinking. Every day, another
+					English material!</p>
+			</div>
 		</div>
 		<section class="courses">
-			<h2><i class="fas fa-clipboard"></i>My courses</h2>
+			<div class="container courses__container">
+				<h2><i class="fas fa-clipboard"></i>My courses</h2>
 			<ul class="courses__info">
 				<li><i class="fas fa-check"></i>From A1 level to C1</li>
 				<li><i class="fas fa-check"></i>Online skype lessons</li>
@@ -61,6 +64,8 @@
 				<li><i class="fas fa-check"></i>Price is 400<i class="fas fa-ruble-sign"></i> per hour</li>
 				<li><i class="fas fa-check"></i>One lesson is 60 minutes</li>
 			</ul>
+			</div>
+
 		</section>
 		<section class="prices">
 			<!-- Slider main container -->
@@ -100,6 +105,13 @@
 			<div class="swiper-button-prev-custom"><i class="fas fa-caret-left"></i></div>
 			<div class="swiper-button-next-custom"><i class="fas fa-caret-right"></i></div>
 		</section>
+		<section class="login">
+			<div class="container login__container">
+				<h4><i class="fas fa-university"></i></i>If you're my student already</i></h4>
+				<span>Login to get access to your materials and tasks</span>
+				<button class="login__button">Log in</button>
+			</div>
+		</section>
 	</main>
 	<footer class="footer">
 		<div class="footer__wrapper">
@@ -128,6 +140,8 @@
 				target="_blank" class="link">Pozdny</a></a>&ensp;2020</span>
 			<span class="footer__copyright--text">For studying puproses only</span>
 		</div>
+
+
 	</footer>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/swiper.min.js.map"></script>
