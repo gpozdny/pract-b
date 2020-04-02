@@ -17,37 +17,79 @@
 .inna__container {
     display: flex;
     flex-direction: column;
-    p {
-        margin-bottom: 5px;
+
+    a {
+        text-decoration: underline;
     }
-    
-    h3  {
+
+    p {
         margin-bottom: 5px;
     }
 
     li {
         a {
-            display: inline-flex;;
+            display: inline-flex;
+            ;
         }
+
         &::before {
             content: '\f058';
             font-family: FontAwesome;
             color: blue;
+            margin-right: 5px;
         }
     }
 
     li+li {
         margin-top: 10px;
     }
+
+    ul+ul {
+        margin-top: 10px;
+    }
 }
 
+.inna {
+    &__extras {
+        margin-top: 10px;
 
+        &-heading {
+            font-weight: bold;
+            text-align: center;
+
+            i {
+                color: red;
+                margin-right: 5px;
+            }
+        }
+
+        &-list {
+            li {
+                &::before {
+                    content: '\f209';
+                    font-family: FontAwesome;
+                    color: rgb(95, 95, 95);
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    &__heading {
+        margin-bottom: 5px;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+
+}
 
 
 h2 {
     text-align: center;
     font-size: 20px;
     margin-bottom: 5px;
+
     i {
         margin-right: 5px;
         color: red;

@@ -63,6 +63,5 @@ document.addEventListener("DOMContentLoaded", function () {
 				alert(`there is no such ID`);
 				event.preventDefault();
 		}
-
 	});
 });
