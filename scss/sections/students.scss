@@ -14,7 +14,7 @@
     }
 }
 
-.inna__container {
+.inna__container, .sophie__container {
     display: flex;
     flex-direction: column;
 
@@ -49,7 +49,8 @@
     }
 }
 
-.inna {
+.inna, 
+.sophie {
     &__extras {
         margin-top: 10px;
 
@@ -80,8 +81,15 @@
         text-decoration: underline;
         text-align: center;
     }
+}
 
+.sophie {
+    margin-top: 20px;
 
+    &__links {
+        display: block !important;
+        margin-top: 5px;
+    }
 }
 
 
@@ -94,4 +102,10 @@ h2 {
         margin-right: 5px;
         color: red;
     }
+}
+
+.attend-fix {
+    display: inline-block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
 }

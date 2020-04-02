@@ -25,19 +25,19 @@ document.addEventListener("DOMContentLoaded", function () {
 		popUp = document.getElementById('popUp'),
 		crossPopUp = document.getElementById('cross');
 
-	buttonPopUp.addEventListener('click', function(){
+	buttonPopUp.addEventListener('click', function () {
 		showPopUp();
 	});
 
-	crossPopUp.addEventListener('click', function(){
+	crossPopUp.addEventListener('click', function () {
 		hidePopUp();
 	});
 
 	function showPopUp() {
 		overlay.classList.remove('isHidden'),
-		overlay.classList.add('isShown');
+			overlay.classList.add('isShown');
 		popUp.classList.remove('isHidden'),
-		popUp.classList.add('isShown');
+			popUp.classList.add('isShown');
 		// document.body.classList.add('scrollIsBlocked');
 	}
 
@@ -52,13 +52,16 @@ document.addEventListener("DOMContentLoaded", function () {
 	let form = document.getElementById('submit'),
 		inputValue = document.getElementById('value');
 
-	form.addEventListener('click', function(){
+	form.addEventListener('click', function () {
 		let studentID = inputValue.value;
 
 		switch (studentID) {
-			case '1nna': 
-			alert(`RIGHT!`);
-			break;
+			case '1nna':
+				alert(`RIGHT!`);
+				break;
+			case 'soph1e':
+				alert(`RIGHT!`);
+				break;
 			default:
 				alert(`there is no such ID`);
 				event.preventDefault();
