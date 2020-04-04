@@ -14,6 +14,9 @@
     h2 {
         margin-bottom: 10px;
         border-bottom: 1px solid black;
+        @include minTab {
+            margin-bottom: 20px;
+        }
     }
 
     &__info {
@@ -24,10 +27,16 @@
         li+li {
             font-size: 14px;
             margin: 0;
+            @include minTab {
+                font-size: 16px;
+            }
         }
 
         li {
             font-size: 14px;
+            @include minTab {
+                font-size: 16px;
+            }
         }
 
         .fa-check {

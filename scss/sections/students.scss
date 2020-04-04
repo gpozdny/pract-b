@@ -14,7 +14,8 @@
     }
 }
 
-.inna__container, .sophie__container {
+.inna__container,
+.sophie__container {
     display: flex;
     flex-direction: column;
 
@@ -24,8 +25,15 @@
 
     p {
         margin-bottom: 5px;
+        @include desktop {
+            font-size: 20px;
+        }
     }
-
+    h3 {
+        @include desktop {
+            font-size: 22px;
+        }
+    }
     li {
         a {
             display: inline-flex;
@@ -38,8 +46,15 @@
             color: blue;
             margin-right: 5px;
         }
+        @include desktop {
+            font-size: 18px;
+        }
     }
-
+    span {
+        @include desktop {
+            font-size: 20px;
+        }
+    }
     li+li {
         margin-top: 10px;
     }
@@ -49,7 +64,7 @@
     }
 }
 
-.inna, 
+.inna,
 .sophie {
     &__extras {
         margin-top: 10px;
@@ -80,12 +95,28 @@
         margin-bottom: 5px;
         text-decoration: underline;
         text-align: center;
+        @include desktop {
+            
+        }
+    }
+    &__extras-heading {
+        @include desktop {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__lessons {
+        margin-top: 20px;
     }
 }
 
 .sophie {
     margin-top: 20px;
 
+    @include desktop {
+        margin-top: 30px;
+    }
     &__links {
         display: block !important;
         margin-top: 5px;
@@ -97,6 +128,10 @@ h2 {
     text-align: center;
     font-size: 20px;
     margin-bottom: 5px;
+
+    @include desktop {
+        font-size: 24px;
+    }
 
     i {
         margin-right: 5px;

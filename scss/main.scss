@@ -51,6 +51,10 @@ img {
 .container {
     width: 100%;
     padding: 0 5% 0 5%;
+
+    @include desktop {
+        padding: 0 10% 0 10%;
+    }
 }
 
 main,
@@ -70,10 +74,10 @@ section {
 .popup {
     position: fixed;
     max-width: 100%;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
+    transform: translate(-50%, -40%);
+    opacity: 1;
     pointer-events: none;
 
     display: flex;

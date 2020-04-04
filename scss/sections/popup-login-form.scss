@@ -1,70 +1,75 @@
-.login-form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 10px;
-    margin: 0;
-    background-color: rgba(143, 143, 143, 0.9);
-    border-radius: 6px;
-    width: 40vh;
-    z-index: 999;
-    &__title {
-        font-size: 16px;
-        margin-bottom: 10px;
+ .login-form {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 15px 10px;
+     margin: 0;
+     background-color: rgba(143, 143, 143, 0.9);
+     border-radius: 6px;
+     width: 40vh;
+     z-index: 999;
+    @include minTab {
+        padding: 20px 15px;
+        width: 45vh;
     }
+     &__title {
+         font-size: 18px;
+         margin-bottom: 10px;
+     }
 
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+     &__wrapper {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
 
-    &__input {
-        width: 100%;
-        min-height: 30px;
-        text-align: center;
-        border-radius: 20px;
-    }
+     &__input {
+         width: 100%;
+         min-height: 30px;
+         text-align: center;
+         border-radius: 20px;
+     }
 
-    input {
-        font-size: 14px;
-    }
+     input {
+         font-size: 16px;
+     }
 
-    input + input {
-        margin-top: 10px;
-    }
+     input+input {
+         margin-top: 10px;
+     }
 
-    &__button {
-        margin-top: 10px;
-        text-align: center;
-        padding: 5px 15px;
-        background-color: rgb(0, 0, 0);
-        border: 0;
-        border-radius: 20px;
-        color: rgb(201, 201, 201) !important;
-    }
+     &__button {
+         margin-top: 10px;
+         text-align: center;
+         padding: 5px 15px;
+         background-color: rgb(0, 0, 0);
+         border: 0;
+         border-radius: 20px;
+         color: rgb(201, 201, 201) !important;
+     }
 
-    &__cross {
-        position: absolute;
-        cursor: pointer;
-        top: -25px;
-        right: 0;
+     &__cross {
+         position: absolute;
+         cursor: pointer;
+         top: -25px;
+         right: 0;
 
-        i {
-            color: rgb(255, 74, 74);
-            font-size: 20px;
-        }
-    }
-    p {
-        margin-top: 5px;
-        font-size: 10px;
-        font-weight: bolder;
+         i {
+             color: rgb(255, 74, 74);
+             font-size: 20px;
+         }
+     }
 
-        span {
-            text-decoration: underline;
-        }
-    }
-}
+     p {
+         margin-top: 5px;
+         font-size: 10px;
+         font-weight: bolder;
+
+         span {
+             text-decoration: underline;
+         }
+     }
+ }
