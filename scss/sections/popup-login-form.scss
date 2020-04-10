@@ -10,13 +10,20 @@
      border-radius: 6px;
      width: 40vh;
      z-index: 999;
-    @include minTab {
-        padding: 20px 15px;
-        width: 45vh;
-    }
+
+     @include minTab {
+         padding: 20px 15px;
+         width: 45vh;
+     }
+
      &__title {
          font-size: 18px;
          margin-bottom: 10px;
+
+         @include desktop {
+             margin-bottom: 15px;
+             font-size: 22px;
+         }
      }
 
      &__wrapper {
@@ -31,14 +38,28 @@
          min-height: 30px;
          text-align: center;
          border-radius: 20px;
+
+         @include desktop {
+             min-height: 40px;
+             font-size: 20px;
+         }
      }
 
      input {
          font-size: 16px;
+
+         @include desktop {
+
+             font-size: 20px;
+         }
      }
 
      input+input {
          margin-top: 10px;
+
+         @include desktop {
+             margin-top: 15px;
+         }
      }
 
      &__button {
@@ -49,6 +70,16 @@
          border: 0;
          border-radius: 20px;
          color: rgb(201, 201, 201) !important;
+
+         @include desktop {
+             transition: all .3s ease-in;
+             font-size: 20px;
+             padding: 10px 20px;
+             &:hover {
+                 background-color: white;
+                 color: rgb(14, 2, 2) !important;
+             }
+         }
      }
 
      &__cross {
@@ -57,19 +88,38 @@
          top: -25px;
          right: 0;
 
+         @include desktop {
+             top: -50px;
+
+         }
+
          i {
              color: rgb(255, 74, 74);
              font-size: 20px;
+
+             @include desktop {
+                 font-size: 40px;
+                 transition: all .3s ease-in;
+
+                 &:hover {
+                     color: rgb(255, 0, 0);
+                 }
+             }
          }
      }
 
      p {
-         margin-top: 5px;
+         margin-top: 10px;
          font-size: 10px;
          font-weight: bolder;
+
+         @include desktop {
+            font-size: 12px;
+         }
 
          span {
              text-decoration: underline;
          }
+
      }
  }

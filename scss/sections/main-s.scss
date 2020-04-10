@@ -1,5 +1,5 @@
     .main {
-
+        z-index: 999;
         &__container {
             display: flex;
             // padding: 0 20px 0 20px;
@@ -15,13 +15,19 @@
             @include minTab {
                 width: 33vh;
             }
+            @include desktop {
+                width: 50vh;
+            }
         }
 
         &__heading {
             margin-bottom: 10px;
             border-bottom: 1px solid black;
             @include minTab {
-                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            @include desktop {
+                font-size: 22px;
             }
         }
 
@@ -31,6 +37,9 @@
             justify-content: center;
             align-items: center;
             align-content: center;
+            @include desktop {
+               max-width: 60vw;
+            }
 
             p,
             li {
@@ -38,6 +47,9 @@
                 margin: 0;
                 @include minTab {
                     font-size: 16px;
+                }
+                @include desktop {
+                    font-size: 20px;
                 }
             }
 
